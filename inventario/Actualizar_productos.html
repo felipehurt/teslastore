@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>Tienda Tesla</title>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../css/custom.css">
+</head>
+<body>
+    <div class="jumbotron" style="margin-bottom: 0px;">
+      <h1>Tienda Tesla</h1>
+      <p>Gestión de precios e inventario</p>
+    </div>
+    <nav class="navbar navbar-expand-md bg-dark">
+      <ul class="nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Administración
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        </div>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Inventario
+        </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="Ingresar_productos.html">Ingresar productos</a>
+            <a class="dropdown-item" href="#">Actualizar productos</a>
+            <a class="dropdown-item" href="Eliminar_productos.html">Eliminar productos</a>
+            <a class="dropdown-item" href="Consultar_productos.html">Consutar productos</a>
+          </div>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Ventas
+        </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="../ventas/ventas.html">Ventas</a>
+          </div>
+      </li> 
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Utilidades
+        </a>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="../utilidades/calculo_precio.html">Calculo valor del producto</a>
+            <a class="dropdown-item" href="../utilidades/calculo_resistencias.html">Calcular valor resistencias</a>
+          </div>
+      </li>           
+      </ul>
+    </nav>
+    <form class="container">
+      <h1>Actualizar Producto</h1>
+      <div class="form-group">
+      <label >Código de producto</label>       
+          <input type="text" class="form-control" id="codigo_producto" placeholder="Ingrese el código del producto">        
+      </div>
+      <div class="form-group">
+      <label>Nombre de producto</label>       
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre del producto">       
+      </div>
+      <div class="form-group">
+      <label>Marca del producto</label>       
+          <input type="text" class="form-control" id="marca" placeholder="Marca del producto">       
+      </div>
+      <div class="form-group">
+      <label>Precio del producto</label>       
+          <input type="text" class="form-control" id="precio" placeholder="Precio del producto">       
+      </div>   
+      <div class="form-group">
+      <label>Cantidad</label>       
+          <input type="text" class="form-control" id="cantidad" placeholder="Cantidad comprada">       
+      </div>           
+        <button type="button" class="btn btn-primary" onclick="actualizarProducto()">Actualizar producto</button>                 
+    </form>    
+</body>
+</html>
